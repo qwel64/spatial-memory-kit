@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this research kit and the release or commit used."
+type: software
+title: "Spatial Memory Kit: inspecting spatial memory in small recurrent world models"
+version: 0.1.0
+repository-code: "https://github.com/qwel64/spatial-memory-kit"
+url: "https://huggingface.co/nao1357/spatial-memory-kit-v0.1"
+date-released: 2026-11-24
+authors:
+  - name: "qwel64"
+license: MIT
+abstract: "A bounded research kit with paired trained and initial recurrent world models, recorded trajectories, replay checks, and documented negative results for spatial-memory transfer."
+keywords:
+  - world models
+  - spatial memory
+  - recurrent neural networks
+  - reproducibility
+  - negative results

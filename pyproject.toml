@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spatial-memory-kit"
+version = "0.1.0"
+description = "A small recurrent world-model spatial-memory inspection and replay kit"
+requires-python = ">=3.10,<3.14"
+license = {text = "MIT"}
+dependencies = ["numpy>=2.0,<3", "torch>=2.5,<3", "safetensors>=0.4,<1"]
+
+[project.scripts]
+spatial-memory = "spatial_memory_kit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

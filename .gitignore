@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+smoke-run*/
+replay-verification.json
+smoke-verification.json
+.env
+.env.*

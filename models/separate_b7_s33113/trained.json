@@ -1,0 +1,26 @@
+{
+  "architecture": {
+    "recurrent": true,
+    "horizons": [
+      1,
+      5
+    ],
+    "hidden_size": 128,
+    "action_modulation": true,
+    "memory_bias": 4.0,
+    "history_horizons": [],
+    "prediction_mode": "rollout",
+    "rollout_decoder_width": 280,
+    "rollout_memory_bias": 7.0,
+    "observation_update": "separate"
+  },
+  "seed": 33113,
+  "arm": "separate_b7",
+  "epoch": 225,
+  "total_epochs": 1125,
+  "updates": 3600,
+  "block": 5,
+  "release_state": "trained",
+  "source_checkpoint": "experiments/prior_correction_v33/separate_b7_s33113/block5/checkpoints/last.pt",
+  "source_checkpoint_sha256": "57a3176b58dd13aa16256d7d662aade543f665dde0f5452054dfd95b969524e4"
+}

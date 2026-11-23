@@ -1,0 +1,97 @@
+{
+  "scope": "Original v33 settings for reference. Full training data and schedules are not in this release.",
+  "original_config_sha256": "0d33215da6b4373a81932da8f2d44ee7226059f669c66a73f865923c8b28712e",
+  "settings": {
+    "name": "separate_b7_s33127",
+    "arm": "separate_b7",
+    "seed": 33127,
+    "architecture": {
+      "recurrent": true,
+      "horizons": [
+        1,
+        5
+      ],
+      "hidden_size": 128,
+      "action_modulation": true,
+      "memory_bias": 4.0,
+      "history_horizons": [],
+      "prediction_mode": "rollout",
+      "rollout_decoder_width": 280,
+      "rollout_memory_bias": 7.0,
+      "observation_update": "separate"
+    },
+    "initial": "experiments\\prior_correction_v33\\initial\\separate_b7_s33127.pt",
+    "blocks": 5,
+    "epochs_per_block": 225,
+    "steps_per_epoch": 16,
+    "updates_per_block": 3600,
+    "training_updates": 18000,
+    "final_total_epochs": 1125,
+    "batch_size": 32,
+    "task_counts_mixed": {
+      "cue_short": 8,
+      "wait_long": 8,
+      "one_segment": 16
+    },
+    "plans": {
+      "1": "data\\prior_correction_v33\\order_block1.npz",
+      "2": "data\\prior_correction_v33\\order_block2.npz",
+      "3": "data\\prior_correction_v33\\order_block3.npz",
+      "4": "data\\prior_correction_v33\\order_mixed.npz",
+      "5": "data\\prior_correction_v33\\order_mixed.npz"
+    },
+    "learning_rate": 0.0003,
+    "minimum_learning_rate": 0.0001,
+    "weight_decay": 1e-05,
+    "gradient_clip": 1.0,
+    "motor_transition_weight": 64.0,
+    "horizon_weights": [
+      1.0,
+      1.0
+    ],
+    "validation_epochs": [
+      0,
+      45,
+      90,
+      135,
+      180,
+      225
+    ],
+    "checkpoint_epochs": [
+      45,
+      90,
+      135,
+      180,
+      225
+    ],
+    "main_checkpoint": "block5/checkpoints/last.pt",
+    "retention_reference": "block3/checkpoints/last.pt",
+    "retention_reference_used_only_after_all_training": true,
+    "optimizer": "fresh AdamW each block",
+    "observation_backend": "scripted fused ATen GRUCell for both structures",
+    "loss_backend": "equal-length batch grouping, original within-task reductions; no padding",
+    "data": {
+      "cue_short": {
+        "train": "data\\prior_correction_v33\\s33127\\cue_short\\train",
+        "val": "data\\prior_correction_v33\\s33127\\cue_short\\val",
+        "probe_train": "data\\prior_correction_v33\\s33127\\cue_short\\probe_train",
+        "probe_val": "data\\prior_correction_v33\\s33127\\cue_short\\probe_val",
+        "test": "data\\prior_correction_v33\\s33127\\cue_short\\test"
+      },
+      "wait_long": {
+        "train": "data\\prior_correction_v33\\s33127\\wait_long\\train",
+        "val": "data\\prior_correction_v33\\s33127\\wait_long\\val",
+        "probe_train": "data\\prior_correction_v33\\s33127\\wait_long\\probe_train",
+        "probe_val": "data\\prior_correction_v33\\s33127\\wait_long\\probe_val",
+        "test": "data\\prior_correction_v33\\s33127\\wait_long\\test"
+      },
+      "one_segment": {
+        "train": "data\\prior_correction_v33\\s33127\\one_segment\\train",
+        "val": "data\\prior_correction_v33\\s33127\\one_segment\\val",
+        "probe_train": "data\\prior_correction_v33\\s33127\\one_segment\\probe_train",
+        "probe_val": "data\\prior_correction_v33\\s33127\\one_segment\\probe_val",
+        "test": "data\\prior_correction_v33\\s33127\\one_segment\\test"
+      }
+    }
+  }
+}

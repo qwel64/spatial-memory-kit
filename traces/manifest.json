@@ -1,0 +1,4174 @@
+{
+  "schema_version": 1,
+  "source_manifest_sha256": "4b6ece21aea7f84616d08234b13e833d49384024f89c4d21f45727a5f8de048a",
+  "reference_precision": "FP32, TF32 disabled",
+  "input_arrays": [
+    "observation_image",
+    "body[:observation_frames]",
+    "previous_action"
+  ],
+  "known_planned_actions": [
+    "planned_action_h1",
+    "planned_action_h5"
+  ],
+  "display_only_arrays": [
+    "display_cells",
+    "display_heading",
+    "display_targets"
+  ],
+  "prior_nan_semantics": "prior contains NaN when prior_applied is false; prior_computed distinguishes computed-but-discarded at true episode start",
+  "traces": [
+    {
+      "id": "a_one/separate_b2_s33101",
+      "route": "a_one",
+      "model_id": "separate_b2_s33101",
+      "file": "traces/a_one_separate_b2_s33101.npz",
+      "sha256": "4f09ded28ed1c9d5e8fbe109be80184d10e10b085621198ab680515ddeabb8fd",
+      "source_sha256": "4f09ded28ed1c9d5e8fbe109be80184d10e10b085621198ab680515ddeabb8fd",
+      "source_checkpoint_sha256": "76544f182ea5d2d473031574f597749b8436d8164ca3d2ba8e3398ce67036112",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/coupled_b2_s33101",
+      "route": "a_one",
+      "model_id": "coupled_b2_s33101",
+      "file": "traces/a_one_coupled_b2_s33101.npz",
+      "sha256": "9d9783ea22e071caf71e64f45fe42435db594813ef6c5c1027e4e8d2a116eaba",
+      "source_sha256": "9d9783ea22e071caf71e64f45fe42435db594813ef6c5c1027e4e8d2a116eaba",
+      "source_checkpoint_sha256": "627de220e8d03f35c78eea64a2f82ee922ad57ee82702499578e4595a5a7a9ea",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/separate_b7_s33101",
+      "route": "a_one",
+      "model_id": "separate_b7_s33101",
+      "file": "traces/a_one_separate_b7_s33101.npz",
+      "sha256": "acd37dd3dead20d63579c47d32539734a41c61072a371ac9123c8b76a5ba1b52",
+      "source_sha256": "acd37dd3dead20d63579c47d32539734a41c61072a371ac9123c8b76a5ba1b52",
+      "source_checkpoint_sha256": "aa6d50f3b190bfcb92005066be83aa5ea99ed935264037808510e31e0a15d366",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/coupled_b7_s33101",
+      "route": "a_one",
+      "model_id": "coupled_b7_s33101",
+      "file": "traces/a_one_coupled_b7_s33101.npz",
+      "sha256": "8092e0705333874638bf2f9e439f3a39c38a28bcb701456f646b43fa6f326b5f",
+      "source_sha256": "8092e0705333874638bf2f9e439f3a39c38a28bcb701456f646b43fa6f326b5f",
+      "source_checkpoint_sha256": "0d0884c296c4838445268033e9c17c3763a1907b9d46ea72f1c798aa34090cb7",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/separate_b2_s33113",
+      "route": "a_one",
+      "model_id": "separate_b2_s33113",
+      "file": "traces/a_one_separate_b2_s33113.npz",
+      "sha256": "75ac8515c2b04dcddf7b85337ba02194196a7b0c5375ef4e30717cbb57a04401",
+      "source_sha256": "75ac8515c2b04dcddf7b85337ba02194196a7b0c5375ef4e30717cbb57a04401",
+      "source_checkpoint_sha256": "ae6f7330337c31b838e71f8a1bf91db74a1d0dec76068354376896f3b072ce2f",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/coupled_b2_s33113",
+      "route": "a_one",
+      "model_id": "coupled_b2_s33113",
+      "file": "traces/a_one_coupled_b2_s33113.npz",
+      "sha256": "5d31f7b03236b39854c2d8f876bf25948992352db5852ffd7901570c5b9779cf",
+      "source_sha256": "5d31f7b03236b39854c2d8f876bf25948992352db5852ffd7901570c5b9779cf",
+      "source_checkpoint_sha256": "b3e4a4e70e876052334ebce55a1a8e5bcc719c84c86f900445d6c694ed0b3829",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/separate_b7_s33113",
+      "route": "a_one",
+      "model_id": "separate_b7_s33113",
+      "file": "traces/a_one_separate_b7_s33113.npz",
+      "sha256": "22a39e16aa2861ba00897d7dab70c41ddbd43e573c1909337a3ef66252b2a05a",
+      "source_sha256": "22a39e16aa2861ba00897d7dab70c41ddbd43e573c1909337a3ef66252b2a05a",
+      "source_checkpoint_sha256": "57a3176b58dd13aa16256d7d662aade543f665dde0f5452054dfd95b969524e4",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/coupled_b7_s33113",
+      "route": "a_one",
+      "model_id": "coupled_b7_s33113",
+      "file": "traces/a_one_coupled_b7_s33113.npz",
+      "sha256": "b300950f05bc8b212242ff53f2948086b19f0d203572994b2d032e14a392d496",
+      "source_sha256": "b300950f05bc8b212242ff53f2948086b19f0d203572994b2d032e14a392d496",
+      "source_checkpoint_sha256": "34124029e59475bef16fef67fd2ae605b1e15c7d463372fe91865fd4330271ad",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/separate_b2_s33127",
+      "route": "a_one",
+      "model_id": "separate_b2_s33127",
+      "file": "traces/a_one_separate_b2_s33127.npz",
+      "sha256": "b5f8438a48652e5c35cc4927bb039ca987f820397fe84b1908916bba2e06c085",
+      "source_sha256": "b5f8438a48652e5c35cc4927bb039ca987f820397fe84b1908916bba2e06c085",
+      "source_checkpoint_sha256": "939a62be64c5f592f74764c6bad922c6011141216d8fc815843592cdf9bb8d07",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/coupled_b2_s33127",
+      "route": "a_one",
+      "model_id": "coupled_b2_s33127",
+      "file": "traces/a_one_coupled_b2_s33127.npz",
+      "sha256": "0dd4b6e3f20f3329933e542001418c4b8d992c2808a46590654865e22116655e",
+      "source_sha256": "0dd4b6e3f20f3329933e542001418c4b8d992c2808a46590654865e22116655e",
+      "source_checkpoint_sha256": "2476faefb414405f85a98cda29b57efd5f68692b7e191de23d5ae2e9aa0509b9",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/separate_b7_s33127",
+      "route": "a_one",
+      "model_id": "separate_b7_s33127",
+      "file": "traces/a_one_separate_b7_s33127.npz",
+      "sha256": "ea8d6654c5a0242e55df4aab288ca3332ddee83306998968579ecd6a59589d14",
+      "source_sha256": "ea8d6654c5a0242e55df4aab288ca3332ddee83306998968579ecd6a59589d14",
+      "source_checkpoint_sha256": "f6c1897a695940a151c61190d20c2e5ea46739a624fd9ab810ae2c723088ab09",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_one/coupled_b7_s33127",
+      "route": "a_one",
+      "model_id": "coupled_b7_s33127",
+      "file": "traces/a_one_coupled_b7_s33127.npz",
+      "sha256": "80e0b2d26314c9322fb879601d4b0dd54d027d7cddf3aec42529b089fc02b743",
+      "source_sha256": "80e0b2d26314c9322fb879601d4b0dd54d027d7cddf3aec42529b089fc02b743",
+      "source_checkpoint_sha256": "3c92900f81598aa737ff75fcfc660e7a341a9f8df73c4bffaa1f07b2fb2be8a8",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/separate_b2_s33101",
+      "route": "a_two",
+      "model_id": "separate_b2_s33101",
+      "file": "traces/a_two_separate_b2_s33101.npz",
+      "sha256": "4f40b9e0c0a19aaaacdeb0c2a0ad6cc56aed4c96ce68c34a6473ae3a25849777",
+      "source_sha256": "4f40b9e0c0a19aaaacdeb0c2a0ad6cc56aed4c96ce68c34a6473ae3a25849777",
+      "source_checkpoint_sha256": "76544f182ea5d2d473031574f597749b8436d8164ca3d2ba8e3398ce67036112",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/coupled_b2_s33101",
+      "route": "a_two",
+      "model_id": "coupled_b2_s33101",
+      "file": "traces/a_two_coupled_b2_s33101.npz",
+      "sha256": "879650d531e42d3ecc2f74c7f5b4e56cfd24fad4e5ec47a6fcdb41d09f58d508",
+      "source_sha256": "879650d531e42d3ecc2f74c7f5b4e56cfd24fad4e5ec47a6fcdb41d09f58d508",
+      "source_checkpoint_sha256": "627de220e8d03f35c78eea64a2f82ee922ad57ee82702499578e4595a5a7a9ea",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/separate_b7_s33101",
+      "route": "a_two",
+      "model_id": "separate_b7_s33101",
+      "file": "traces/a_two_separate_b7_s33101.npz",
+      "sha256": "a2871039b89324c2ce242551cafc6302264d1ffb046641c909e17e30dc510f61",
+      "source_sha256": "a2871039b89324c2ce242551cafc6302264d1ffb046641c909e17e30dc510f61",
+      "source_checkpoint_sha256": "aa6d50f3b190bfcb92005066be83aa5ea99ed935264037808510e31e0a15d366",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/coupled_b7_s33101",
+      "route": "a_two",
+      "model_id": "coupled_b7_s33101",
+      "file": "traces/a_two_coupled_b7_s33101.npz",
+      "sha256": "ef738fef0308b219b33f87876e977d9d9e9ea2d645be18da87eec1cadad58bc6",
+      "source_sha256": "ef738fef0308b219b33f87876e977d9d9e9ea2d645be18da87eec1cadad58bc6",
+      "source_checkpoint_sha256": "0d0884c296c4838445268033e9c17c3763a1907b9d46ea72f1c798aa34090cb7",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/separate_b2_s33113",
+      "route": "a_two",
+      "model_id": "separate_b2_s33113",
+      "file": "traces/a_two_separate_b2_s33113.npz",
+      "sha256": "7a0f645fca17675d5fef0fd00d7bac25508795928880950735de8d9750564d6c",
+      "source_sha256": "7a0f645fca17675d5fef0fd00d7bac25508795928880950735de8d9750564d6c",
+      "source_checkpoint_sha256": "ae6f7330337c31b838e71f8a1bf91db74a1d0dec76068354376896f3b072ce2f",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/coupled_b2_s33113",
+      "route": "a_two",
+      "model_id": "coupled_b2_s33113",
+      "file": "traces/a_two_coupled_b2_s33113.npz",
+      "sha256": "a64af5e7b298413309b0ab29244ba47f7cebecbfee8b411def4c87fe7da7cb00",
+      "source_sha256": "a64af5e7b298413309b0ab29244ba47f7cebecbfee8b411def4c87fe7da7cb00",
+      "source_checkpoint_sha256": "b3e4a4e70e876052334ebce55a1a8e5bcc719c84c86f900445d6c694ed0b3829",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/separate_b7_s33113",
+      "route": "a_two",
+      "model_id": "separate_b7_s33113",
+      "file": "traces/a_two_separate_b7_s33113.npz",
+      "sha256": "9bc94537b93e8a3ab130f02e89aa97060153124327af1910814f9b37b6355f21",
+      "source_sha256": "9bc94537b93e8a3ab130f02e89aa97060153124327af1910814f9b37b6355f21",
+      "source_checkpoint_sha256": "57a3176b58dd13aa16256d7d662aade543f665dde0f5452054dfd95b969524e4",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/coupled_b7_s33113",
+      "route": "a_two",
+      "model_id": "coupled_b7_s33113",
+      "file": "traces/a_two_coupled_b7_s33113.npz",
+      "sha256": "968d8f20ac225c36822483dd0552d8b5c632dcb3c7106489917b512be4da9ac1",
+      "source_sha256": "968d8f20ac225c36822483dd0552d8b5c632dcb3c7106489917b512be4da9ac1",
+      "source_checkpoint_sha256": "34124029e59475bef16fef67fd2ae605b1e15c7d463372fe91865fd4330271ad",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/separate_b2_s33127",
+      "route": "a_two",
+      "model_id": "separate_b2_s33127",
+      "file": "traces/a_two_separate_b2_s33127.npz",
+      "sha256": "3cdf66c7f60816e33e2c33117d86647bb8d19a88b69608c705047e52bf3c7d64",
+      "source_sha256": "3cdf66c7f60816e33e2c33117d86647bb8d19a88b69608c705047e52bf3c7d64",
+      "source_checkpoint_sha256": "939a62be64c5f592f74764c6bad922c6011141216d8fc815843592cdf9bb8d07",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/coupled_b2_s33127",
+      "route": "a_two",
+      "model_id": "coupled_b2_s33127",
+      "file": "traces/a_two_coupled_b2_s33127.npz",
+      "sha256": "45360a36bdd5c7d04b33e16a7600e3f79a80d38057f6d67396987194559bc3d1",
+      "source_sha256": "45360a36bdd5c7d04b33e16a7600e3f79a80d38057f6d67396987194559bc3d1",
+      "source_checkpoint_sha256": "2476faefb414405f85a98cda29b57efd5f68692b7e191de23d5ae2e9aa0509b9",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/separate_b7_s33127",
+      "route": "a_two",
+      "model_id": "separate_b7_s33127",
+      "file": "traces/a_two_separate_b7_s33127.npz",
+      "sha256": "a53525c1ee2786caf7c9c517f2cdc0f7b5c8712211f6836e6afadef1e5cd1561",
+      "source_sha256": "a53525c1ee2786caf7c9c517f2cdc0f7b5c8712211f6836e6afadef1e5cd1561",
+      "source_checkpoint_sha256": "f6c1897a695940a151c61190d20c2e5ea46739a624fd9ab810ae2c723088ab09",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "id": "a_two/coupled_b7_s33127",
+      "route": "a_two",
+      "model_id": "coupled_b7_s33127",
+      "file": "traces/a_two_coupled_b7_s33127.npz",
+      "sha256": "0e6180a7ee76e6fef8373f2bcce109967ed770011ba1a301d6404bc1845c77e5",
+      "source_sha256": "0e6180a7ee76e6fef8373f2bcce109967ed770011ba1a301d6404bc1845c77e5",
+      "source_checkpoint_sha256": "3c92900f81598aa737ff75fcfc660e7a341a9f8df73c4bffaa1f07b2fb2be8a8",
+      "query": 48,
+      "case_index": 0,
+      "observation_frames": 49,
+      "reference_batch_size": 32,
+      "arrays": {
+        "h": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "prior_computed": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "prior_applied": {
+          "shape": [
+            49
+          ],
+          "dtype": "bool"
+        },
+        "z1": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "z5": {
+          "shape": [
+            49,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "observation_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "prediction_time_h5": {
+          "shape": [
+            49
+          ],
+          "dtype": "int64"
+        },
+        "previous_action": {
+          "shape": [
+            49,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "planned_action_h1": {
+          "shape": [
+            49,
+            1
+          ],
+          "dtype": "int64"
+        },
+        "planned_action_h5": {
+          "shape": [
+            49,
+            5
+          ],
+          "dtype": "int64"
+        },
+        "observation_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "truth_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "prediction_image_h5": {
+          "shape": [
+            49,
+            16,
+            16
+          ],
+          "dtype": "float32"
+        },
+        "real_action": {
+          "shape": [
+            53
+          ],
+          "dtype": "int64"
+        },
+        "body": {
+          "shape": [
+            54,
+            5
+          ],
+          "dtype": "float32"
+        },
+        "display_cells": {
+          "shape": [
+            54,
+            2
+          ],
+          "dtype": "int64"
+        },
+        "display_heading": {
+          "shape": [
+            54
+          ],
+          "dtype": "int64"
+        },
+        "display_targets": {
+          "shape": [
+            54,
+            4
+          ],
+          "dtype": "float32"
+        }
+      }
+    }
+  ]
+}

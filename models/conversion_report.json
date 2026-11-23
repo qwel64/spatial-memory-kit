@@ -1,0 +1,183 @@
+{
+  "source_code": [
+    {
+      "source": "organism/brain.py",
+      "source_sha256": "7d79398497b68784700493887d75f42be589e43d197744677c4a17a3f6cba52f",
+      "export": "src/spatial_memory_kit/brain.py",
+      "export_sha256": "0491599fe3dcbcf742ef918dcb5f5b9cda68af6f6f0ff366f2d0594c73c4b689",
+      "modifications": []
+    },
+    {
+      "source": "organism/prior_correction.py",
+      "source_sha256": "71991fb82eb315eb41a901e93f73c4106796ca3fb6f7993b07ebd4f522ed112f",
+      "export": "src/spatial_memory_kit/model.py",
+      "export_sha256": "5e8aacd00e8eec5744b4628ceaa6776a456a45542f43f29c272e2477c1c1dbd5",
+      "modifications": [
+        "Relative package imports",
+        "Seed helper isolated",
+        "Pickle loader removed; public loader uses safetensors"
+      ]
+    },
+    {
+      "source": "organism/environment.py",
+      "source_sha256": "08c19641b343448a12b726dce878bc58971d39376525bcef6e6834a7f5ff2e55",
+      "export": "src/spatial_memory_kit/environment.py",
+      "export_sha256": "42aa0d5f7750d2678796c98366eb39564014b53ae791405a103728ea1bc41bdd",
+      "modifications": []
+    },
+    {
+      "source": "organism/policy.py",
+      "source_sha256": "b7ada8a6433bcda1f2c93ecae5a3ebbfe5606fe7b31bb0a2e7b4e4074df6c5b8",
+      "export": "src/spatial_memory_kit/policy.py",
+      "export_sha256": "d52988951d0302229c6122c6d156a3973d8b5aad9f279684aae7fc30f8bade8f",
+      "modifications": []
+    }
+  ],
+  "conversions": [
+    {
+      "id": "separate_b2_s33101",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33101",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33113",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33113",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33127",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33127",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33101",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33101",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33113",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33113",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33127",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33127",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33101",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33101",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33113",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33113",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33127",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33127",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33101",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33101",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33113",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33113",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33127",
+      "state": "initial",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33127",
+      "state": "trained",
+      "all_tensors_bit_exact": true,
+      "tensor_count": 18
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,106 @@
+{
+  "scope": "Observed independent fresh-model smoke run; not a v33 training rerun or spatial-memory success",
+  "config": {
+    "purpose": "Independent execution and learning smoke test; not v33 replication or H2 evidence",
+    "seed": 20261124,
+    "updates": 40,
+    "batch_size": 4,
+    "learning_rate": 0.0003,
+    "steps_per_episode": 32,
+    "train_layouts": [
+      910001,
+      910002
+    ],
+    "validation_layouts": [
+      910101,
+      910102
+    ],
+    "train_episode_seed": 930001,
+    "validation_episode_seed": 940001,
+    "train_episodes_per_layout": 4,
+    "validation_episodes_per_layout": 2,
+    "architecture": {
+      "recurrent": true,
+      "horizons": [
+        1,
+        5
+      ],
+      "hidden_size": 128,
+      "action_modulation": true,
+      "memory_bias": 4.0,
+      "history_horizons": [],
+      "prediction_mode": "rollout",
+      "rollout_decoder_width": 280,
+      "rollout_memory_bias": 2.0,
+      "observation_update": "coupled"
+    }
+  },
+  "metrics": {
+    "completed": true,
+    "purpose": "Independent execution and learning smoke test; not v33 replication or H2 evidence",
+    "runtime": {
+      "torch": "2.5.1+cu121",
+      "device": "cpu"
+    },
+    "records": [
+      {
+        "update": 0,
+        "validation_loss": 0.1574370563030243,
+        "h1_image_mse": 0.12494949996471405,
+        "h1_current_image_copy_mse": 0.009485021233558655,
+        "h5_image_mse": 0.1257452517747879,
+        "h5_current_image_copy_mse": 0.018383534625172615
+      },
+      {
+        "update": 10,
+        "training_loss": 0.15464511513710022,
+        "validation_loss": 0.1513327658176422,
+        "h1_image_mse": 0.12064911425113678,
+        "h1_current_image_copy_mse": 0.009485021233558655,
+        "h5_image_mse": 0.1212473064661026,
+        "h5_current_image_copy_mse": 0.018383534625172615
+      },
+      {
+        "update": 20,
+        "training_loss": 0.14971879124641418,
+        "validation_loss": 0.1423783004283905,
+        "h1_image_mse": 0.11395412683486938,
+        "h1_current_image_copy_mse": 0.009485021233558655,
+        "h5_image_mse": 0.1140989437699318,
+        "h5_current_image_copy_mse": 0.018383534625172615
+      },
+      {
+        "update": 30,
+        "training_loss": 0.1310357302427292,
+        "validation_loss": 0.12337754666805267,
+        "h1_image_mse": 0.098772332072258,
+        "h1_current_image_copy_mse": 0.009485021233558655,
+        "h5_image_mse": 0.09792114794254303,
+        "h5_current_image_copy_mse": 0.018383534625172615
+      },
+      {
+        "update": 40,
+        "training_loss": 0.09619136154651642,
+        "validation_loss": 0.07605431973934174,
+        "h1_image_mse": 0.05844789370894432,
+        "h1_current_image_copy_mse": 0.009485021233558655,
+        "h5_image_mse": 0.055093489587306976,
+        "h5_current_image_copy_mse": 0.018383534625172615
+      }
+    ],
+    "training_labels": [
+      "future image",
+      "future body"
+    ],
+    "model_inputs": [
+      "observed image",
+      "observed body",
+      "previous action"
+    ],
+    "copy_baseline_beaten_at_final": {
+      "h1": false,
+      "h5": false
+    },
+    "no_spatial_memory_claim": true
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-24",
+  "scope": "Release packaging and replay checks by AI implementation and separate AI review agents; not external peer review or independent laboratory replication.",
+  "implementation_checks": {
+    "status": "passed",
+    "published_runtime_scope": "Python 3.12.10 Windows CPU, original installed torch 2.5.1+cu121",
+    "dependency_versions": {
+      "python": "3.12.10",
+      "torch": "2.5.1+cu121",
+      "numpy": "2.5.4",
+      "safetensors": "0.8.0"
+    },
+    "checkpoint_conversions": 24,
+    "all_checkpoint_tensors_bit_exact": true,
+    "source_code_provenance": "models/conversion_report.json",
+    "traces": 24,
+    "trained_full_replay_max_error": 5.692243576049805e-06,
+    "reference_tolerance": 1e-05,
+    "causality_and_file_output_tests": 5,
+    "control_conditions": 144,
+    "control_results": "examples/memory_control_results.json",
+    "smoke_updates": 40,
+    "smoke_validation_loss_initial": 0.1574370563030243,
+    "smoke_validation_loss_final": 0.07605431973934174,
+    "smoke_copy_baseline_beaten_at_final": {
+      "h1": false,
+      "h5": false
+    },
+    "scope_limitations": [
+      "No full original v33 training reproduction",
+      "No aggregate H2 branch-choice/readout rerun",
+      "No GPU, Linux or different PyTorch version validation by this implementation agent",
+      "No new spatial-memory success inferred from the smoke test",
+      "Recorded trial-zero 49-frame examples are illustrative subsets, not independent replication samples"
+    ]
+  },
+  "separate_agent_checks": {
+    "models_compared_with_original": 24,
+    "tensor_values_per_model": 276501,
+    "all_tensor_values_bit_exact": true,
+    "cpu_forwards_compared_with_original": 96,
+    "cpu_forward_bit_exact": true,
+    "state_update_conditions": [
+      "true_episode_start",
+      "known_action_reset_window",
+      "provided_hidden",
+      "reset_each_step"
+    ],
+    "numerical_trace_arrays_compared": 552,
+    "original_aggregate_source_records_compared": 110,
+    "saved_aggregate_values_and_provenance_comparisons": 9722,
+    "saved_aggregate_comparison_passed": true
+  },
+  "not_claimed": [
+    "Full original study rerun",
+    "New spatial-memory success",
+    "External peer review",
+    "All platforms or library versions tested"
+  ]
+}

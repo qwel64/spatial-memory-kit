@@ -1,0 +1,6 @@
+# Tested locally with Python 3.12.10 on Windows, CPU inference/training.
+# Installed torch was 2.5.1+cu121; torch==2.5.1 permits the corresponding CPU wheel.
+# This pins the observed environment, not a promise that all platforms are identical.
+torch==2.5.1
+numpy==2.5.4
+safetensors==0.8.0

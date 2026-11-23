@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "format": "safetensors",
+  "models": [
+    {
+      "id": "separate_b2_s33101",
+      "state": "initial",
+      "weights": "models/separate_b2_s33101/initial.safetensors",
+      "config": "models/separate_b2_s33101/initial.json",
+      "sha256": "6909522d1896ec13381a6ed55e19c98425f9dc77ee97fe0f60c36fe727878836",
+      "config_sha256": "b6b3d8633e5ad4e20ac4879e82c235123da1300925771579e9359d6d6d0311ea",
+      "source_checkpoint_sha256": "58a29066a4f59f64f656c71d96cefb7f0fc05f04990663daf0da46096f6f209b",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33101",
+      "state": "trained",
+      "weights": "models/separate_b2_s33101/trained.safetensors",
+      "config": "models/separate_b2_s33101/trained.json",
+      "sha256": "60a8705925a6a7cd8b1fe2db7dbb37a7d2a1f7212bff204923ef1c5d7a97a108",
+      "config_sha256": "664d81d2b14cd9fcacf38215f3d7f4a05ff8d5ba66f25876d28b5b1c312c44bc",
+      "source_checkpoint_sha256": "76544f182ea5d2d473031574f597749b8436d8164ca3d2ba8e3398ce67036112",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33113",
+      "state": "initial",
+      "weights": "models/separate_b2_s33113/initial.safetensors",
+      "config": "models/separate_b2_s33113/initial.json",
+      "sha256": "d48f77381f5c54468764b5be4bfcaa710cf418d33a9331fbf8bebe879663b306",
+      "config_sha256": "2c33bc65987945c0148f0a6ba078d1db409aaf638aa8426713bce625b04c6745",
+      "source_checkpoint_sha256": "ab6dfb517cc949530899ea21cdff1db6a32a38895ca223aac61675454f6877e0",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33113",
+      "state": "trained",
+      "weights": "models/separate_b2_s33113/trained.safetensors",
+      "config": "models/separate_b2_s33113/trained.json",
+      "sha256": "e4cac117b7a11f99c3bbcda08d3c1d3eda7f8b93b710caff9fc571bdbcdf69a5",
+      "config_sha256": "12828cfa3db03544c049f00437ccd5b757f6e849cd2672ce10cd56a7fcadcf8e",
+      "source_checkpoint_sha256": "ae6f7330337c31b838e71f8a1bf91db74a1d0dec76068354376896f3b072ce2f",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33127",
+      "state": "initial",
+      "weights": "models/separate_b2_s33127/initial.safetensors",
+      "config": "models/separate_b2_s33127/initial.json",
+      "sha256": "17a0a40031bbf777a269205151c10df4eb332f963ccc2978380f3cc1aa6186b3",
+      "config_sha256": "183bb1cd8d64fd056fbcbb5fe9acfbebf5c7b321b45f8083875e2c5af547de2b",
+      "source_checkpoint_sha256": "851bcc38948ccf029500445f0edf454d0475af062b4ff876c965be26915630c6",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b2_s33127",
+      "state": "trained",
+      "weights": "models/separate_b2_s33127/trained.safetensors",
+      "config": "models/separate_b2_s33127/trained.json",
+      "sha256": "7da5c0894d010f6d615ab37f125821260c05c986e2b7351a6526eb4757ef150d",
+      "config_sha256": "f470a757a00e58e6773e0ec4ea26d5507b484c95a5e5e15aa5ba7ba2dbc10f85",
+      "source_checkpoint_sha256": "939a62be64c5f592f74764c6bad922c6011141216d8fc815843592cdf9bb8d07",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33101",
+      "state": "initial",
+      "weights": "models/coupled_b2_s33101/initial.safetensors",
+      "config": "models/coupled_b2_s33101/initial.json",
+      "sha256": "b17f5b42d6c6c9358d99b25fbf5b0bbf3c437cb2d71c786c4cb404869c561340",
+      "config_sha256": "a6a120e268a70e8217035273d12d4924a08c206571b2852a46e15af91705b41d",
+      "source_checkpoint_sha256": "6fa8cfd29d57ed46cd5bb102598758b2223eb568e291c1c108d7980c89a3e9ef",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33101",
+      "state": "trained",
+      "weights": "models/coupled_b2_s33101/trained.safetensors",
+      "config": "models/coupled_b2_s33101/trained.json",
+      "sha256": "d49e4bab82e60b994371194773884ac76aaf69910a04d5a3271d6063bd2f0f7f",
+      "config_sha256": "c46c04362f6ac004942ceafc32ba42c5a01e53e3c1f29896de22cae0f1b947e3",
+      "source_checkpoint_sha256": "627de220e8d03f35c78eea64a2f82ee922ad57ee82702499578e4595a5a7a9ea",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33113",
+      "state": "initial",
+      "weights": "models/coupled_b2_s33113/initial.safetensors",
+      "config": "models/coupled_b2_s33113/initial.json",
+      "sha256": "925ba442a431e76d5759875c2dabac007bc5a151ff98b64de0b54d29c628de61",
+      "config_sha256": "05e098b36f1d5766946f2949383f622eb53fe15be78b80bbc90c22b3535bdb5d",
+      "source_checkpoint_sha256": "8a10c1f26f74f4a6e05ad372cfaa1a1bf844af09002f013812c78e0615682f49",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33113",
+      "state": "trained",
+      "weights": "models/coupled_b2_s33113/trained.safetensors",
+      "config": "models/coupled_b2_s33113/trained.json",
+      "sha256": "08ee068fae743fd299ab58c6ee547f3a86a3dbbba4cdbfbdb8d6a81b09aeeef9",
+      "config_sha256": "3aef89c19e6935eb2feaa01d0d7863cc4b58517dbe78270d3b6613911c49ee5a",
+      "source_checkpoint_sha256": "b3e4a4e70e876052334ebce55a1a8e5bcc719c84c86f900445d6c694ed0b3829",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33127",
+      "state": "initial",
+      "weights": "models/coupled_b2_s33127/initial.safetensors",
+      "config": "models/coupled_b2_s33127/initial.json",
+      "sha256": "81b5458f7ed99f0adfe560fec405e4d13ca7dd00edc8862904394ab58d08eb3c",
+      "config_sha256": "3ef805d3a1c0048c538e904f57740716b5bcc53aaf6eef503317cb4c370a32b7",
+      "source_checkpoint_sha256": "cbf313b466deb724728ff6442cdf79f430795bd22ccb72e4a2c21ff467dcc2b8",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b2_s33127",
+      "state": "trained",
+      "weights": "models/coupled_b2_s33127/trained.safetensors",
+      "config": "models/coupled_b2_s33127/trained.json",
+      "sha256": "2c8a0ef2a9879843c494c6dbfff6c05b7b99bdfbb2bc80730e245633c221470c",
+      "config_sha256": "2323528d4c83fd6977b8ecc10c6f9658c8a33d7cab9473ba7e8336334a457bb3",
+      "source_checkpoint_sha256": "2476faefb414405f85a98cda29b57efd5f68692b7e191de23d5ae2e9aa0509b9",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33101",
+      "state": "initial",
+      "weights": "models/separate_b7_s33101/initial.safetensors",
+      "config": "models/separate_b7_s33101/initial.json",
+      "sha256": "65bc488934d12320259f702d66bed4bab7068ea3298b7e32526a153ddc793fa4",
+      "config_sha256": "60b5d4b9d3073cdcbeaeb1293940dbe9744a1c5bd321f848b92d9a9866b3ec7f",
+      "source_checkpoint_sha256": "24994a44e3972fbbf388b00d67528c7f78afe979bb6c4c3ceea89a298aacb260",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33101",
+      "state": "trained",
+      "weights": "models/separate_b7_s33101/trained.safetensors",
+      "config": "models/separate_b7_s33101/trained.json",
+      "sha256": "7f559bd7275641ed2eb95a71eb30691c68a0dbd9523557b011b98906f8af7132",
+      "config_sha256": "4ef78e938bd5047c6e82e798cb71b37cc1a561ef616379ae1dfebabcf1bca3ce",
+      "source_checkpoint_sha256": "aa6d50f3b190bfcb92005066be83aa5ea99ed935264037808510e31e0a15d366",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33113",
+      "state": "initial",
+      "weights": "models/separate_b7_s33113/initial.safetensors",
+      "config": "models/separate_b7_s33113/initial.json",
+      "sha256": "d114137b750c980922108be74868ff48dfbc1010aece0d076253aea14a573afa",
+      "config_sha256": "b2c48e24ab15c18539261df07ec61de2af70fbaa2c9332a9549bc3f72706c819",
+      "source_checkpoint_sha256": "138f44d1bd9253b46829925d57333f489a9538f447317fdb462688afb9d85a85",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33113",
+      "state": "trained",
+      "weights": "models/separate_b7_s33113/trained.safetensors",
+      "config": "models/separate_b7_s33113/trained.json",
+      "sha256": "00cbc3863b090f1214607df218c5d704fb171e0ef48c1d9c20ab2dc06c61793c",
+      "config_sha256": "e70bc4cb675641a127d4e80e7b6039925aa42da59fc284f4d7a6072bafae1de7",
+      "source_checkpoint_sha256": "57a3176b58dd13aa16256d7d662aade543f665dde0f5452054dfd95b969524e4",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33127",
+      "state": "initial",
+      "weights": "models/separate_b7_s33127/initial.safetensors",
+      "config": "models/separate_b7_s33127/initial.json",
+      "sha256": "e78a92ab330fe890b9c4174c2887ba33f62f727f39be7623473680f0e8380ec5",
+      "config_sha256": "2198703dccc437ebf57e0e72ebcd7d5973aff8b765a51bcbbe59096090dbce6d",
+      "source_checkpoint_sha256": "5b7177084b1b77b3bd95f9b8e7562b1a5620bd9f4e21ef45eb636784b2f381ce",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "separate_b7_s33127",
+      "state": "trained",
+      "weights": "models/separate_b7_s33127/trained.safetensors",
+      "config": "models/separate_b7_s33127/trained.json",
+      "sha256": "e28caef8614916870e99dc9e088a2647d48920ffd562e47503f05c3da4e5ee04",
+      "config_sha256": "508c8f407a972c83af42fecb774b13059f948eedaf11f204e618a79da340ff09",
+      "source_checkpoint_sha256": "f6c1897a695940a151c61190d20c2e5ea46739a624fd9ab810ae2c723088ab09",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33101",
+      "state": "initial",
+      "weights": "models/coupled_b7_s33101/initial.safetensors",
+      "config": "models/coupled_b7_s33101/initial.json",
+      "sha256": "6972abe795891c08245741f4e7e41e760ac3e6058b42caaf0a8c3044066af67f",
+      "config_sha256": "3d8ef65960b9b50ba9b01c3e95b620ced73263143b6708caded658b6d834402f",
+      "source_checkpoint_sha256": "6f94c61db5f04f719b7ba1eb394ef82c96da41e7d84ec63572691072edf1fd02",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33101",
+      "state": "trained",
+      "weights": "models/coupled_b7_s33101/trained.safetensors",
+      "config": "models/coupled_b7_s33101/trained.json",
+      "sha256": "dc0c7598028b0a747e159bf71abac2f1f7420417947c56f210de7a18bd3ac02d",
+      "config_sha256": "7a77f1f7dac9f94eac663e383e0140944fc0e30d1e3d775dc9286e85bb3797e0",
+      "source_checkpoint_sha256": "0d0884c296c4838445268033e9c17c3763a1907b9d46ea72f1c798aa34090cb7",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33113",
+      "state": "initial",
+      "weights": "models/coupled_b7_s33113/initial.safetensors",
+      "config": "models/coupled_b7_s33113/initial.json",
+      "sha256": "2e0b1d6276e18e01a21e8ecadfe3f3d654286a39cb72ba36271142d7aa657f76",
+      "config_sha256": "4d02016771034dbdb973eaafe3892639b1d64143cae2692ca61d78f69efcfe61",
+      "source_checkpoint_sha256": "506fdf9b67ddbfd5569bc3876e13d7ac8fd6fc2cb1bdae7c7f5aa73e052173a4",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33113",
+      "state": "trained",
+      "weights": "models/coupled_b7_s33113/trained.safetensors",
+      "config": "models/coupled_b7_s33113/trained.json",
+      "sha256": "32f7aebaef92a9c263118f932c5f1abff8bc5845dcbfb4b547d82283180f870c",
+      "config_sha256": "a7de2e900152ed01fc5f379e1166cc168e76a8b8ac4eb6bfb4efa982783a5790",
+      "source_checkpoint_sha256": "34124029e59475bef16fef67fd2ae605b1e15c7d463372fe91865fd4330271ad",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33127",
+      "state": "initial",
+      "weights": "models/coupled_b7_s33127/initial.safetensors",
+      "config": "models/coupled_b7_s33127/initial.json",
+      "sha256": "84ae4d01d57d7107ce24532efcf5f46f20384c83f38e459d9a4218a7a9a48dec",
+      "config_sha256": "1304bb16883bc853613e404c34e15920d0d78035f2cd6afb0e78a05bf83d48b1",
+      "source_checkpoint_sha256": "f80877d3b7ec0b967c82739ca9d624d78ad20d72543158553d152884e247a71e",
+      "parameters": 276501,
+      "tensor_count": 18
+    },
+    {
+      "id": "coupled_b7_s33127",
+      "state": "trained",
+      "weights": "models/coupled_b7_s33127/trained.safetensors",
+      "config": "models/coupled_b7_s33127/trained.json",
+      "sha256": "2923df17915eca691beba0baeb02d023b2b43dd5853d3ff51ec7409b56213173",
+      "config_sha256": "cd48b9a380ec6ea591e8658fa53c10af30db8a5a07c1cf2bf34bcdd0092b1291",
+      "source_checkpoint_sha256": "3c92900f81598aa737ff75fcfc660e7a341a9f8df73c4bffaa1f07b2fb2be8a8",
+      "parameters": 276501,
+      "tensor_count": 18
+    }
+  ]
+}

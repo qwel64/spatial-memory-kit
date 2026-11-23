@@ -1,0 +1,4 @@
+# Preserve the bytes recorded by the release's SHA-256 manifests on all hosts.
+* -text
+*.safetensors binary
+*.npz binary

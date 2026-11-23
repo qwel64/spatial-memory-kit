@@ -1,0 +1,24 @@
+{
+  "architecture": {
+    "recurrent": true,
+    "horizons": [
+      1,
+      5
+    ],
+    "hidden_size": 128,
+    "action_modulation": true,
+    "memory_bias": 4.0,
+    "history_horizons": [],
+    "prediction_mode": "rollout",
+    "rollout_decoder_width": 280,
+    "rollout_memory_bias": 2.0,
+    "observation_update": "coupled"
+  },
+  "seed": 33113,
+  "arm": "coupled_b2",
+  "epoch": 0,
+  "total_epochs": 0,
+  "release_state": "initial",
+  "source_checkpoint": "experiments/prior_correction_v33/initial/coupled_b2_s33113.pt",
+  "source_checkpoint_sha256": "8a10c1f26f74f4a6e05ad372cfaa1a1bf844af09002f013812c78e0615682f49"
+}
